@@ -1,0 +1,61 @@
+# depslib dependency file v1.0
+1518442728 source:c:\users\utilisateur\documents\cpp\premiercpp\src\personnage.cpp
+	"Personnage.h"
+	<string>
+
+1518443862 c:\users\utilisateur\documents\cpp\premiercpp\include\personnage.h
+	<iostream>
+	<string>
+	"entity.h"
+
+1518446992 source:c:\users\utilisateur\documents\cpp\premiercpp\main.cpp
+	<iostream>
+	<string>
+	"Personnage.h"
+	"Monstre.h"
+	"Game.h"
+	"Salle.h"
+
+1518445797 c:\users\utilisateur\documents\cpp\premiercpp\include\entity.h
+	<string>
+
+1518443923 c:\users\utilisateur\documents\cpp\premiercpp\include\monstre.h
+	"entity.h"
+
+1518445652 source:c:\users\utilisateur\documents\cpp\premiercpp\src\entity.cpp
+	"entity.h"
+
+1518442871 source:c:\users\utilisateur\documents\cpp\premiercpp\src\monstre.cpp
+	"Monstre.h"
+
+1518444360 source:c:\users\utilisateur\documents\cpp\premiercpp\src\lieu.cpp
+	"Lieu.h"
+
+1518444697 c:\users\utilisateur\documents\cpp\premiercpp\include\lieu.h
+	<string>
+
+1518447129 source:c:\users\utilisateur\documents\cpp\premiercpp\src\carte.cpp
+	"Carte.h"
+	<list>
+
+1518447119 c:\users\utilisateur\documents\cpp\premiercpp\include\carte.h
+	<Lieu.h>
+	<Salle.h>
+	<list>
+
+1518447277 source:c:\users\utilisateur\documents\cpp\premiercpp\src\salle.cpp
+	"Salle.h"
+	<string>
+
+1518447282 c:\users\utilisateur\documents\cpp\premiercpp\include\salle.h
+	<Lieu.h>
+	<list>
+	"Monstre.h"
+
+1518446086 source:c:\users\utilisateur\documents\cpp\premiercpp\src\game.cpp
+	"Game.h"
+
+1518446075 c:\users\utilisateur\documents\cpp\premiercpp\include\game.h
+	<list>
+	"Carte.h"
+
