@@ -1,4 +1,5 @@
 #include "Monstre.h"
+#include <iostream>
 
 Monstre::Monstre()
 {

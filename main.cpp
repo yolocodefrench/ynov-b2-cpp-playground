@@ -11,7 +11,7 @@ using namespace std;
 
 int main()
 {
-    Carte[2] carteTab;
+    Carte *carteTab[2];
     Carte *carte1 = new Carte("Super Partie !!!");
     Carte *carte2 = new Carte("Partie deux!");
 
@@ -41,28 +41,30 @@ int main()
     Monstre *monstre4 = new Monstre("Dany", 150, 2, 15);
     Monstre *monstre5 = new Monstre("Charles", 50, 2, 45);
     Monstre *monstre6 = new Monstre("Alexis", 60, 2, 60);
-    Monstre *monstre6 = new Monstre("Thomas", 50, 2, 50);
-    Monstre *monstre7 = new Monstre("Nathan", 100, 2, 100);
-    Monstre *monstre8 = new Monstre("guillaume", 200, 2, 50);
-    Monstre *monstre9 = new Monstre("Doucet", 3, 1, 2);
+    Monstre *monstre7 = new Monstre("Thomas", 50, 2, 50);
+    Monstre *monstre8 = new Monstre("Nathan", 100, 2, 100);
+    Monstre *monstre9 = new Monstre("guillaume", 200, 2, 50);
+    Monstre *monstre10 = new Monstre("Doucet", 3, 1, 2);
 
     salle1->addMonstreToTheList(monstre1);
     salle1->addMonstreToTheList(monstre2);
 
-    salle2->addMonstreToTheList(monstre9);
+    salle2->addMonstreToTheList(monstre10);
 
-    salle3->addMonstreToTheList(monstre9);
+    salle3->addMonstreToTheList(monstre10);
     salle3->addMonstreToTheList(monstre5);
 
-    salle4->addMonstreToTheList(monstre7);
+    salle4->addMonstreToTheList(monstre8);
     salle4->addMonstreToTheList(monstre3);
 
     salle5->addMonstreToTheList(monstre4);
-    salle6->addMonstreToTheList(monstre8);
+    salle6->addMonstreToTheList(monstre9);
 
-    Menu::AskCarte();
+    Game *game1 = new Game();
 
+    game1->AddCarteToTheList(carteTab[Menu::AskCarte()]);
 
+    game1->Play();
 
 
 

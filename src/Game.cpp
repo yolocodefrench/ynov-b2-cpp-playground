@@ -2,6 +2,7 @@
 #include <string>
 #include "Game.h"
 
+using namespace std;
 Game::Game()
 {
 
@@ -17,9 +18,9 @@ void Game::AddCarteToTheList(Carte *carte)
     this->listeDeCarte.push_back(*carte);
 }
 
-Game::Play(){
-    for (int n : l) {
-        std::cout << n << '\n';
+void Game::Play(){
+    for (Carte n : this->listeDeCarte) {
+        n.Play();
     }
 }
 

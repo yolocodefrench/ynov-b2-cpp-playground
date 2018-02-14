@@ -6,6 +6,7 @@ class Monstre : public Entity
 {
     public:
         Monstre();
+        Monstre(string prenom, int pv, int taille, int force);
         virtual ~Monstre();
 
 

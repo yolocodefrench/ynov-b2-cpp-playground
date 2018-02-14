@@ -13,3 +13,7 @@ Personnage::~Personnage()
 {
     //dtor
 }
+
+void CreatePersonnage(){
+
+}

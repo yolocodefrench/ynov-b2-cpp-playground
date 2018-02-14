@@ -11,6 +11,7 @@ class Game
         Game();
         virtual ~Game();
         void AddCarteToTheList(Carte *carte);
+        void Play();
 
     protected:
 

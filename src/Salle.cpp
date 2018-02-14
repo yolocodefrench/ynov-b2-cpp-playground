@@ -22,3 +22,4 @@ void Salle::addMonstreToTheList(Monstre *monstre)
 {
     this->listMonstre.push_back(*monstre);
 }
+

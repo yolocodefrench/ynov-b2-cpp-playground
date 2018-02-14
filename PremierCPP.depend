@@ -8,25 +8,27 @@
 	<string>
 	"entity.h"
 
-1518446992 source:c:\users\utilisateur\documents\cpp\premiercpp\main.cpp
+1518523107 source:c:\users\utilisateur\documents\cpp\premiercpp\main.cpp
 	<iostream>
 	<string>
 	"Personnage.h"
 	"Monstre.h"
 	"Game.h"
 	"Salle.h"
+	"Menu.h"
 
 1518445797 c:\users\utilisateur\documents\cpp\premiercpp\include\entity.h
 	<string>
 
-1518443923 c:\users\utilisateur\documents\cpp\premiercpp\include\monstre.h
+1518520631 c:\users\utilisateur\documents\cpp\premiercpp\include\monstre.h
 	"entity.h"
 
 1518445652 source:c:\users\utilisateur\documents\cpp\premiercpp\src\entity.cpp
 	"entity.h"
 
-1518442871 source:c:\users\utilisateur\documents\cpp\premiercpp\src\monstre.cpp
+1518520912 source:c:\users\utilisateur\documents\cpp\premiercpp\src\monstre.cpp
 	"Monstre.h"
+	<iostream>
 
 1518444360 source:c:\users\utilisateur\documents\cpp\premiercpp\src\lieu.cpp
 	"Lieu.h"
@@ -34,16 +36,17 @@
 1518444697 c:\users\utilisateur\documents\cpp\premiercpp\include\lieu.h
 	<string>
 
-1518447129 source:c:\users\utilisateur\documents\cpp\premiercpp\src\carte.cpp
+1518522583 source:c:\users\utilisateur\documents\cpp\premiercpp\src\carte.cpp
 	"Carte.h"
 	<list>
+	<iostream>
 
-1518447119 c:\users\utilisateur\documents\cpp\premiercpp\include\carte.h
+1518522115 c:\users\utilisateur\documents\cpp\premiercpp\include\carte.h
 	<Lieu.h>
 	<Salle.h>
 	<list>
 
-1518447277 source:c:\users\utilisateur\documents\cpp\premiercpp\src\salle.cpp
+1518522064 source:c:\users\utilisateur\documents\cpp\premiercpp\src\salle.cpp
 	"Salle.h"
 	<string>
 
@@ -52,10 +55,18 @@
 	<list>
 	"Monstre.h"
 
-1518446086 source:c:\users\utilisateur\documents\cpp\premiercpp\src\game.cpp
+1518522449 source:c:\users\utilisateur\documents\cpp\premiercpp\src\game.cpp
+	<iostream>
+	<string>
 	"Game.h"
 
-1518446075 c:\users\utilisateur\documents\cpp\premiercpp\include\game.h
+1518520795 c:\users\utilisateur\documents\cpp\premiercpp\include\game.h
 	<list>
 	"Carte.h"
+
+1518454936 c:\users\utilisateur\documents\cpp\premiercpp\include\menu.h
+
+1518521683 source:c:\users\utilisateur\documents\cpp\premiercpp\src\menu.cpp
+	"Menu.h"
+	<iostream>
 
