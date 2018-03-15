@@ -18,9 +18,9 @@ void Game::AddCarteToTheList(Carte *carte)
     this->listeDeCarte.push_back(*carte);
 }
 
-void Game::Play(){
+void Game::Play(Personnage *personnage){
     for (Carte n : this->listeDeCarte) {
-        n.Play();
+        n.Play(personnage);
     }
 }
 

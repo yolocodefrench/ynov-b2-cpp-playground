@@ -1,6 +1,7 @@
 #include "Carte.h"
 #include <list>
 #include <iostream>
+#include <Menu.h>
 
 
 using namespace std;
@@ -23,10 +24,22 @@ void Carte::addSalleToTheList(Salle *salle)
     this->listSalle.push_back(*salle);
 }
 
-void Carte::Play(){
+void Carte::Play(Personnage *personnage){
     int i=1;
     for (Salle n : this->listSalle) {
-        cout << i << " - " << n.Getnom() << endl;
+        Menu::Clear();
+        cout << "Vous venez de rentrez dans la salle : \n";
+        cout << n.Getnom() << "\n";
+
+        for(Monstre m : n.listMonstre){
+            n.CombattreMonstre(personnage, &m);
+        }
+
+
+        if(Menu::Continuer() != 1){
+            cout << "Vous venez de perdre";
+            break;
+        }
         i++;
     }
 }

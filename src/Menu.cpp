@@ -15,7 +15,7 @@ Menu::~Menu()
     //dtor
 }
 void Menu::Clear(){
-    system("cls"):
+    system("cls");
 }
 int Menu::AskCarte(){
     int a=0;
@@ -25,18 +25,43 @@ int Menu::AskCarte(){
     }
     return a-1;
 }
-void Menu::AskPrenom(){
-    string a="";
-    cout << "Veuillez rentrer la carte que vous choisissez pour jouer" << endl;
-    cin >> a;
-    return a;
-}
-void Menu::AskPrenom(){
-    string a="";
-    cout << "Veuillez rentrer la carte que vous choisissez pour jouer" << endl;
-    cin >> a;
-    return a;
+
+string Menu::AskPrenom(){
+    string prenom="";
+    cout << "Veuillez rentrer votre prenom\n";
+    cin >> prenom;
+    return prenom;
 }
 
+string Menu::AskNom(){
+    string nom="";
+    cout << "Veuillez rentrer votre nom\n";
+    cin >> nom;
+    return nom;
+}
 
+float Menu::AskTaille(){
+    float taille=0;
+    cout << "Veuillez rentrez votre taille\n";
+    cout << "ex : 1.78\n";
+    cin >> taille;
+    return taille;
+}
 
+Personnage Menu::AskPersonnage(){
+    string prenom = Menu::AskPrenom();
+    string nom = Menu::AskNom();
+    float taille = Menu::AskTaille();
+
+    Personnage *personnage = new Personnage(prenom, nom, taille);
+
+    return *personnage;
+}
+
+int Menu::Continuer(){
+    int continuer = 0;
+    cout << "Voulez-vous continuer?\n";
+    cout << "1 - OUI\n2 - NON";
+    cin >> continuer;
+    return continuer;
+}

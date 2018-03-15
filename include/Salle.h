@@ -4,6 +4,7 @@
 #include <Lieu.h>
 #include <list>
 #include "Monstre.h"
+#include <Personnage.h>
 
 using namespace std;
 
@@ -14,11 +15,13 @@ class Salle : public Lieu
         Salle(string nom);
         virtual ~Salle();
         void addMonstreToTheList(Monstre *monstre);
+        int CombattreMonstre(Personnage *personnage, Monstre *monstre);
+        list<Monstre> listMonstre;
 
     protected:
 
     private:
-        list<Monstre> listMonstre;
+
 };
 
 #endif // SALLE_H

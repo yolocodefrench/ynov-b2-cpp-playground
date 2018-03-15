@@ -12,7 +12,7 @@ class Carte : public Lieu
         Carte(string nom);
         virtual ~Carte();
         void addSalleToTheList(Salle *salle);
-        void Play();
+        void Play(Personnage *personnage);
 
     protected:
 

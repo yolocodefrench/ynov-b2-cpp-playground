@@ -64,7 +64,9 @@ int main()
 
     game1->AddCarteToTheList(carteTab[Menu::AskCarte()]);
 
-    game1->Play();
+    Personnage personnage = Menu::AskPersonnage();
+
+    game1->Play(&personnage);
 
 
 

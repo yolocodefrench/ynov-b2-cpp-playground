@@ -11,6 +11,11 @@ class Personnage : public Entity
         Personnage();
         Personnage(string prenom, string nom, float taille);
         virtual ~Personnage();
+        string prenom;
+        string nom;
+        float taille;
+        int force;
+
 
     protected:
 
