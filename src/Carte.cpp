@@ -31,6 +31,7 @@ void Carte::Play(Personnage *personnage){
         cout << "Vous venez de rentrez dans la salle : \n";
         cout << n.Getnom() << "\n";
 
+
         for(Monstre m : n.listMonstre){
             n.CombattreMonstre(personnage, &m);
         }

@@ -20,7 +20,7 @@ void Menu::Clear(){
 int Menu::AskCarte(){
     int a=0;
     while(a!=1 && a!=2){
-        cout << "Veuillez rentrer la carte que vous choisissez pour jouer" << endl;
+        cout << "Veuillez rentrer la carte que vous choisissez pour jouer\n - 1\n - 2" << endl;
         cin >> a;
     }
     return a-1;
