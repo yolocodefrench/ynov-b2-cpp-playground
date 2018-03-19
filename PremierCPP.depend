@@ -8,7 +8,7 @@
 	<string>
 	"entity.h"
 
-1521109852 source:c:\users\utilisateur\documents\cpp\premiercpp\main.cpp
+1521134279 source:c:\users\utilisateur\documents\cpp\premiercpp\main.cpp
 	<iostream>
 	<string>
 	"Personnage.h"
@@ -36,22 +36,24 @@
 1518444697 c:\users\utilisateur\documents\cpp\premiercpp\include\lieu.h
 	<string>
 
-1521117689 source:c:\users\utilisateur\documents\cpp\premiercpp\src\carte.cpp
+1521133869 source:c:\users\utilisateur\documents\cpp\premiercpp\src\carte.cpp
 	"Carte.h"
 	<list>
 	<iostream>
 	<Menu.h>
+	<Salle.h>
 
 1521103040 c:\users\utilisateur\documents\cpp\premiercpp\include\carte.h
 	<Lieu.h>
 	<Salle.h>
 	<list>
 
-1521118468 source:c:\users\utilisateur\documents\cpp\premiercpp\src\salle.cpp
+1521134921 source:c:\users\utilisateur\documents\cpp\premiercpp\src\salle.cpp
 	"Salle.h"
 	<string>
+	<sstream>
 
-1521109503 c:\users\utilisateur\documents\cpp\premiercpp\include\salle.h
+1521131167 c:\users\utilisateur\documents\cpp\premiercpp\include\salle.h
 	<Lieu.h>
 	<list>
 	"Monstre.h"

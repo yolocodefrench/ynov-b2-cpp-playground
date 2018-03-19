@@ -2,6 +2,7 @@
 #include <list>
 #include <iostream>
 #include <Menu.h>
+#include <Salle.h>
 
 
 using namespace std;
@@ -30,9 +31,9 @@ void Carte::Play(Personnage *personnage){
         Menu::Clear();
         cout << "Vous venez de rentrez dans la salle : \n";
         cout << n.Getnom() << "\n";
+        cout << n.toString();
 
-
-        for(Monstre m : n.listMonstre){
+        for(Monstre m : n.getListMonstre()){
             n.CombattreMonstre(personnage, &m);
         }
 

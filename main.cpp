@@ -25,16 +25,6 @@ int main()
     Salle *salle5= new Salle("Avant dernière salle");
     Salle *salle6 = new Salle("Derniere salle");
 
-    carte1->addSalleToTheList(salle1);
-    carte1->addSalleToTheList(salle2);
-    carte1->addSalleToTheList(salle5);
-    carte1->addSalleToTheList(salle6);
-
-    carte2->addSalleToTheList(salle3);
-    carte2->addSalleToTheList(salle4);
-    carte2->addSalleToTheList(salle5);
-    carte2->addSalleToTheList(salle6);
-
     Monstre *monstre1 = new Monstre("sacrebleu", 20, 3, 40);
     Monstre *monstre2 = new Monstre("diantre", 15, 2, 50);
     Monstre *monstre3 = new Monstre("Corentin", 100, 2, 20);
@@ -60,7 +50,19 @@ int main()
     salle5->addMonstreToTheList(monstre4);
     salle6->addMonstreToTheList(monstre9);
 
+    carte1->addSalleToTheList(salle1);
+    carte1->addSalleToTheList(salle2);
+    carte1->addSalleToTheList(salle5);
+    carte1->addSalleToTheList(salle6);
+
+    carte2->addSalleToTheList(salle3);
+    carte2->addSalleToTheList(salle4);
+    carte2->addSalleToTheList(salle5);
+    carte2->addSalleToTheList(salle6);
+
     Game *game1 = new Game();
+
+
 
     game1->AddCarteToTheList(carteTab[Menu::AskCarte()]);
 

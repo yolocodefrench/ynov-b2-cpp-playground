@@ -16,11 +16,13 @@ class Salle : public Lieu
         virtual ~Salle();
         void addMonstreToTheList(Monstre *monstre);
         int CombattreMonstre(Personnage *personnage, Monstre *monstre);
-        list<Monstre> listMonstre;
+        list<Monstre> getListMonstre();
+        string toString();
 
     protected:
 
     private:
+        list<Monstre> listMonstre;
 
 };
 

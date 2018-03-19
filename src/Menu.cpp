@@ -23,6 +23,7 @@ int Menu::AskCarte(){
         cout << "Veuillez rentrer la carte que vous choisissez pour jouer\n - 1\n - 2" << endl;
         cin >> a;
     }
+    Clear();
     return a-1;
 }
 
